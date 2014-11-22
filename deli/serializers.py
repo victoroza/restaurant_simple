@@ -4,9 +4,6 @@ import datetime
 
 
 class RestaurantSerializer(serializers.HyperlinkedModelSerializer):
-    # foodItem = serializers.HyperlinkedRelatedField(
-    #     view_name='FoodItemtDetail'
-    # )
     class Meta:
         model = Restaurant
         fields = ('id', 'created', 'name', 'email', 'phone', 'address',
